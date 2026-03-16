@@ -1,19 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Sumário</h1>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .sumario {
+                max-width: 700px;
+                margin: auto;
+                font-family: serif;
+            }
 
-    </footer>
-</body>
+            .sumario h1 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .toc {
+                list-style: none;
+                padding: 0;
+            }
+
+            .toc li {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                align-items: center;
+                margin: 6px 0;
+            }
+
+            .dots {
+                border-bottom: 1px dotted black;
+                margin: 0 8px;
+            }
+
+            .titulo {
+                white-space: nowrap;
+            }
+
+            .pagina {
+                white-space: nowrap;
+            }
+
+            /* hierarquia */
+
+            .parte {
+                font-weight: bold;
+                margin-top: 20px;
+            }
+
+            .capitulo {
+                font-weight: bold;
+            }
+
+            .sub {
+                padding-left: 20px;
+            }
+    </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <section class="sumario">
+                <h1>Sumário</h1>
+                <hr>
+                <ul class="toc">
+
+                    <li>
+                        <span class="titulo">Prefácio</span>
+                        <span class="dots"></span>
+                        <span class="pagina">XXIII</span>
+                    </li>
+
+                    <li>
+                        <span class="titulo">Um Livro para Todos os
+                            Programadores</span>
+                        <span class="dots"></span>
+                        <span class="pagina">XXIV</span>
+                    </li>
+
+                    <li>
+                        <span class="titulo">O Que Há de Novo Nesta
+                            Edição</span>
+                        <span class="dots"></span>
+                        <span class="pagina">XXIV</span>
+                    </li>
+
+                    <li>
+                        <span class="titulo">O Que Há no Livro</span>
+                        <span class="dots"></span>
+                        <span class="pagina">XXV</span>
+                    </li>
+
+                    <li class="parte">
+                        <span class="titulo">Parte 1 — A Linguagem C</span>
+                        <span class="dots"></span>
+                        <span class="pagina">1</span>
+                    </li>
+
+                    <li class="capitulo">
+                        <span class="titulo">1. Uma Visão Geral de C</span>
+                        <span class="dots"></span>
+                        <span class="pagina">3</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">As Origens de C</span>
+                        <span class="dots"></span>
+                        <span class="pagina">3</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">C é uma Linguagem de Médio
+                            Nível</span>
+                        <span class="dots"></span>
+                        <span class="pagina">4</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">C É uma Linguagem
+                            Estruturada</span>
+                        <span class="dots"></span>
+                        <span class="pagina">5</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">C É uma Linguagem para
+                            Programadores</span>
+                        <span class="dots"></span>
+                        <span class="pagina">7</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">Compiladores Versus
+                            Interpretadores</span>
+                        <span class="dots"></span>
+                        <span class="pagina">9</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">A Forma de um Programa em C</span>
+                        <span class="dots"></span>
+                        <span class="pagina">9</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">A Biblioteca e a Linkedição</span>
+                        <span class="dots"></span>
+                        <span class="pagina">11</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">Compilação Separada</span>
+                        <span class="dots"></span>
+                        <span class="pagina">12</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">Compilando um Programa em C</span>
+                        <span class="dots"></span>
+                        <span class="pagina">13</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">O Mapa de Memória de C</span>
+                        <span class="dots"></span>
+                        <span class="pagina">13</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">C Versus C++</span>
+                        <span class="dots"></span>
+                        <span class="pagina">14</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">Um Compilador C++ Funcionará com
+                            Programas C?</span>
+                        <span class="dots"></span>
+                        <span class="pagina">15</span>
+                    </li>
+
+                    <li class="sub">
+                        <span class="titulo">Uma Revisão de Termos</span>
+                        <span class="dots"></span>
+                        <span class="pagina">15</span>
+                    </li>
+
+                </ul>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
 </html>
